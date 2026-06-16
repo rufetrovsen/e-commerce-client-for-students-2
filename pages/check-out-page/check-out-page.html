@@ -1,12 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <include
+      id="header"
+      src="../../components/header/header-components.html"
+    ></include>
+    <div class="content h-screen w-full flex p-4 items-center justify-center">
+      <div class="w-full h-full border flex">
+        <div class="h-full w-[50%]  p-4">
+          <p class="mb-2 text-xl" for="">First name</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="first-name"
+          />
+          <p class="mb-2 text-xl" for="">Last name</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="last-name"
+          />
+          <p class="mb-2 text-xl" for="">City</p>
+          <select
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="city"
+          >
+            <option>Azerbaijan</option>
+          </select>
+          <p class="mb-2 text-xl" for="">City</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="first-name"
+          />
+          <p class="mb-2 text-xl" for="">Address</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="address"
+          />
+          <p class="mb-2 text-xl" for="">Zip</p>
+          <input
+            class="bg-white border w-[200px] rounded-lg px-3 py-2"
+            type="text"
+            id="first-name"
+          />
+          <p class="mb-2 text-xl" for="">tel</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="first-name"
+          />
+          <p class="mb-2 text-xl" for="">Email</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            id="first-name"
+          />
+
+          <div class="flex items center space-x-1 py-2">
+            <input type="checkbox" />
+            <span>Aggre to terms and conditions</span>
+          </div>
+        </div>
+        <div class="h-full w-[50%]  p-4">
+          
+          
+          <p class="text-xl mb-2" for="">Card number</p>
+          <input
+            class="bg-white border w-full rounded-lg px-3 py-2"
+            type="text"
+            name="id"
+            id=""
+          />
+
+          <div class="flex space-x-1">
+            <div>
+                <p class="text-xl mb-2" for="">Expiration(mm)</p>
+            <input
+              class="bg-white border w-full rounded-lg px-3 py-2"
+              type="text"
+              name=""
+              id=""
+            />
+            </div>
+            <div>
+                <p class="text-xl mb-2" for="">Expiration(yy)</p>
+            <input
+              class="bg-white border w-full rounded-lg px-3 py-2"
+              type="text"
+              name=""
+              id=""
+            />
+            </div>
+            <div>
+                <p class="text-xl mb-2" for="">Card security code</p>
+            <input
+              class="bg-white border w-full rounded-lg px-3 py-2"
+              type="text"
+              name=""
+              id=""
+            />
+            </div>
+          </div>
+         <p class="flex justify-between">
+              <span class="font-medium">Subtotal:</span>
+              <span class="text-red-600 font-bold">$186.99</span>
+            </p>
+
+            <hr />
+            <p class="flex justify-between">
+              <span class="font-medium">Shipping:</span>
+              <span class="text-red-600 font-bold">Free</span>
+            </p>
+
+            <hr />
+            <p class="flex justify-between">
+              <span class="font-medium">Total:</span>
+              <span class="text-red-600 font-bold">$186.99</span>
+            </p>
+
+            <hr />
+            <button
+              class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 mt-2"
+            >
+              Place to order
+            </button>
+          
+        </div>
+      </div>
+    </div>
+    <include
+      id="footer"
+      src="../../components/footer/footer-component.html"
+    ></include>
+    <script type="module" src="../../utils/include.js"></script>
+  </body>
 </html>

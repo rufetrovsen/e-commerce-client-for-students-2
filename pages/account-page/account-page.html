@@ -7,6 +7,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <include  id="header" src="../../components/header/header-components.html"></include>
+    <div class="content h-screen w-full flex items-center p-4 justify-center">
+    <div class="w-full h-full p-4 border">
+        <button class="px-3 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg text-xl">My products for sale</button>
+        <div class="border p-4 text-2xl my-4 w-full">
+            <h2 class="text-2xl font-bold text-red-400">User details</h2>
+            <p>Name:Maxim</p>
+            <p>Surname:Ivanov</p>
+            <p>Email:maxim@gmail.com</p>
+            <p>Username:Max</p>
+
+        </div>
+    </div>
+    </div>
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+    <script type="module" src="../../utils/include.js" ></script>
 </body>
 </html>

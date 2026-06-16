@@ -1,12 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <include
+      id="header"
+      src="../../components/header/header-components.html"
+    ></include>
+
+    <div class="content h-[1200px] p-4 w-full flex items-center justify-center">
+      <div class="w-full h-full border">
+        <div class="w-full h-[60%] p-4">
+          <h2 class="text-4xl pb-4 font-bold">Product page</h2>
+
+          <div class="w-full h-[calc(100%-4rem)] flex p-4">
+            <div class=" flex-1 p-4 w-[50%]">
+              <h2 class="text-3xl font-bold">Boots from Adidas</h2>
+              <div class="flex item-center space-x-2">
+                <ul>
+                  <li class="flex space-x-1">
+                    <img
+                      class="w-[20px] h-[20px]"
+                      src="../../public/svg/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="w-[20px] h-[20px]"
+                      src="../../public/svg/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="w-[20px] h-[20px]"
+                      src="../../public/svg/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="w-[20px] h-[20px]"
+                      src="../../public/svg/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="w-[20px] h-[20px]"
+                      src="../../public/svg/star.svg"
+                      alt="star"
+                    />
+                  </li>
+                </ul>
+                <span>(150 reviews)</span>
+                <span>|</span>
+                <span class="">In stock</span>
+              </div>
+              <p class="text-4xl py-4">192.99$</p>
+              <p class="text-lg">
+                PlayStation 5 Controller Skin High quality vinyl with air
+                channel adhesive for easy bubble free install & mess free
+                removal Pressure sensitive.
+              </p>
+              <hr class="my-4" />
+              <button class="w-[200px] bg-black text-white py-2 rounded-lg hover:bg-gray-800 mt-2 text-white ">
+              Add to cart
+              </button>
+
+              <div class="border p-4 space-x-3 m-t-10">
+                <img src="../../public/svg/icon-delivery.svg" alt="">
+                <p class="flex flex-col">
+                   <span>Free delivery</span>
+                   <span>Enter your postal code for delivery availability</span>
+                     
+                  
+                </p>
+              </div>
+
+              <div class="border  border-t-0 p-4 space-x-3">
+                <img src="../../public/svg/icon-return.svg" alt="">
+                <p class="flex flex-col">
+                   <span>Return delivery</span>
+                   <span>Free 30 days delivery returns.Details</span>
+                     
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="w-[50%] bg-green-300">
+              <img
+                class="w-full h-full border object-cover"
+                src="https://www.sheepskinshop.ca/cdn/shop/files/Classic_Short_Shearling_Boot_Pair_45_1.jpg?v=1726087309"
+                alt="product"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-[40%] p-4 ">
+             <h2 class="text-2xl px-4 font bold">Relatd item</h2>
+
+              <div class="  p-3w-full flex space-x-1">
+
+        <div class="w-1/4 bg-gray-100  flex flex-col justify-center items-center py-4">
+
+          <img  class="w-[200px] h-[200px] bg-blue-300 "src="https://www.sheepskinshop.ca/cdn/shop/files/Classic_Short_Shearling_Boot_Pair_45_1.jpg?v=1726087309" alt="">
+          <div class="w-full px-5">
+            <p class="font-medium text-lg">Good nike boots</p>
+            <p class="text-red-500 py-2">19.99$</p>
+            <ul>
+                <li class="flex space-x-1">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                </li>
+
+                   
+            </ul>
+            <button class=" w-full mt-2px-3 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg">Add to cart</button>
+          </div>
+          
+        </div>
+        <div class="w-1/4 bg-gray-100  flex flex-col justify-center items-center py-4">
+
+          <img  class="w-[200px] h-[200px] bg-blue-300 "src="https://www.sheepskinshop.ca/cdn/shop/files/Classic_Short_Shearling_Boot_Pair_45_1.jpg?v=1726087309" alt="">
+          <div class="w-full px-5">
+            <p class="font-medium text-lg">Good nike boots</p>
+            <p class="text-red-500 py-2">19.99$</p>
+            <ul>
+                <li class="flex space-x-1">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                        <img class="w-[20px] h-[20px]"src="../../public/svg/star.svg" alt="star">
+                </li>
+
+                   
+            </ul>
+            <button class=" w-full mt-2px-3 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg">Add to cart</button>
+          </div>
+          
+        </div>
+       </div>
+        </div>
+      </div>
+    </div>
+
+    <include
+      id="footer"
+      src="../../components/footer/footer-component.html"
+    ></include>
+
+    <script type="module" src="../../utils/include.js"></script>
+  </body>
 </html>

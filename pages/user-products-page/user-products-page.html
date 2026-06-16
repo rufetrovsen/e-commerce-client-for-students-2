@@ -7,6 +7,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <include  id="header" src="../../components/header/header-components.html"></include>
+     <div class="content h-screen w-full flex items-center p-4 justify-center">
+        <div class="w-full h-full p-4 border">
+             <div class="w-full h-[70%] p-4  overflow-auto">
+          <button class="px-3 py-2 bg-green-500hover: bg-green-600 text-white mb-4 cursor pointer rounded-lg">Add new product</button>
+          <h2 class="text-xl font-bold mb-4">My product</h2>
+
+          <table class="w-full text-left border-collapse">
+            <tr class="bg-gray-300">
+              <th class="px-3 py-2 border">Id</th>
+              <th class="px-3 py-2 border">Brand</th>
+              <th class="px-3 py-2 border">Model</th>
+              <th class="px-3 py-2 border">Category</th>
+              <th class="px-3 py-2 border">Image</th>
+              <th class="px-3 py-2 border">Price</th>
+              <th class="px-3 py-2 border">Rating</th>
+              <th class="px-3 py-2 border">Actions</th>
+            </tr>
+
+            <tr>
+              <td class="px-3 py-2 border">
+                
+              </td>
+              <td class="px-3 py-2 border">nike</td>
+              <td class="px-3 py-2 border">
+                Jordan
+              </td>
+              <td class="px-3 py-2 border">cloth</td>
+              <td class="px-3 py-2 border">
+                 <img
+                  class="w-[100px] h-[100px] object-cover"
+                  src="https://www.sheepskinshop.ca/cdn/shop/files/Classic_Short_Shearling_Boot_Pair_45_1.jpg?v=1726087309"
+                  alt=""
+                />
+              </td>
+              <td class="px-3 py-2 border">19.99$</td>
+              <td class="px-3 py-2 border">5</td>
+              <td class="px-3 py-2 border">
+                <button class="px-3 py-2 rounded-lg text-white bg-blue-500 hover: bg-blue-600 cursor pointer">edit</button>
+                <button class="px-3 py-2 rounded-lg text-white bg-red-500 hover: bg-red-600 cursor pointer">delete</button>
+              </td>
+            
+          </table>
+        </div>
+        </div>
+     </div>
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+    <script type="module" src="../../utils/include.js" ></script>
 </body>
 </html>

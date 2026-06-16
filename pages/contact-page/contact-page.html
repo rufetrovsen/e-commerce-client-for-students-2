@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <include id="header" src="../../components/header/header-components.html"></include>
+
+    <div class="content h-screen w-full flex p-4 items-center justify-center">
+        <div class="w-full h-full border p-4">
+            <h2 class="text-4xl font-bold mb-6">Contact</h2>
+
+            <div class="w-full h-[700px] flex">
+                <div class="w-[30%]  flex flex-col p-6">
+                    <div class="flex items-center space-x-4">
+                        <img src="../../public/svg/icons-phone.svg" alt="">
+                        <span class="text-xl font-bold">Call To Us</span>
+                    </div>
+
+                    <p class="text-xl mt-4">
+                        We are available 24/7, 7 days a week.
+                    </p>
+
+                    <p class="text-xl mt-4">
+                        Phone: +8801611112222
+                    </p>
+
+                    <hr class="my-6">
+
+                    <div class="flex items-center space-x-4">
+                        <img src="../../public/svg/icons-mail.svg" alt="">
+                        <span class="text-xl font-bold">Email Us</span>
+                    </div>
+
+                    <p class="text-xl mt-4">
+                        Fill out our form and we will contact you within 24 hours.
+                    </p>
+
+                    <p class="text-xl mt-4">
+                        customer@exclusive.com
+                    </p>
+
+                    <p class="text-xl mt-4">
+                        support@exclusive.com
+                    </p>
+                </div>
+
+                <div class="w-[70%]  h-full flex items-center justify around">
+                    <div class="shadow p-4 border w-[80%] h-[80%]">
+
+                        <ul class="flex justify beetween">
+                            <li>
+                                <p>Your name</p>
+                                <input type="text" class=" bg-white border px-3 py-2" placeholder="Write your name">
+                            </li>
+                            <li>
+                                <p>Email</p>
+                                <input type="text" class=" bg-white border px-3 py-2" placeholder="Write your email">
+                            </li>
+                            <li>
+                                <p>Your phone</p>
+                                <input type="text" class=" bg-white border px-3 py-2" placeholder="Write your phone">
+                            </li>
+                        </ul>
+                        <p>Your message</p>
+                        <texterea cols=5 class="bg-white h-[200px] w-full" ></texterea>
+                        <button type="submit" class="w-full bg-red-500 text-white font-medium rounded-md px-1 py-2 hover:bg-red-600">send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <include id="footer" src="../../components/footer/footer-component.html"></include>
+
+    <script type="module" src="../../utils/include.js"></script>
 </body>
 </html>
