@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <include  id="header" src="../../components/header/header-components.html"></include>
-    <div class="content h-[800px] w-full p-4 flex items-center justify-center">
-        <div class="w-full h-full border p-4">
-            <div class="w-full h-[60%]  flex flex-col p-4 ">
-               <h2 class="text-4xl font-bold mb-4">About</h2>
+  <include  id="header" src="../../components/header/header-components.html"></include>
+  <body class="bg-gray-50">
 
-               <div class="w-full flex flex-1 ">
-                <div class="w-[50%] h-full  space-y-2 flex flex-col justify-center">
-                    <h2 class="text-2xl font-bold">Our story</h2>
-                    <p>
-                        Launced in 2015, Exclusive is South Asias premier online shopping makterplace with an active presense in Bangladesh.
-                        Supported by wide range of tailored marketing,
-                        data and service solutions, Exclusive has 10,500 sallers 
-                        and 300 brands and serves 3 millioons customers across the region. 
-                    </p>
-                    <p>Exclusive has more than 1 Million products to offer,
-                        growing at a very fast.
-                        Exclusive offers a diverse assotment in categories ranging  from consumer.
-                    </p>
-                </div>
-
-                <div class="h-full w-[50%] ">
-                   <img class="h-full w-[50%]"src="../../public/Images/online-shopping-system 1.png"> 
-                </div>
-               </div>
-            </div>
-            <div class="w-full h-[40%]  flex items-center   justify-center">
-                <ul class ="w-full space-x-4 flex justify-around">
-                    <li class="w-[25%] h-[350px] ">
-                        
-                        <img src="../../public/Images/Frame 874.png">
-                        <h2>Emin Sadiqli</h2>
-                        <p>Founder&chairmen</p>
-                        
-                    </li>
-                    <li class="w-[25%] h-[350px] ">
-                        
-                        <img src="../../public/Images/ai-generated-handsome-businessman-happy-and-smiling-young-man-in-smart-suit-posing-in-office-with-suit-ai-generated-free-photo 1.png">
-                        <h2>Emin Sadiqli</h2>
-                        <p>Founder&chairmen</p>
-                        
-                    </li>
-                    <li class="w-[25%] h-[350px] ">
-                        
-                        <img src="../../public/Images/Frame 876.png">
-                        <h2>Emin Sadiqli</h2>
-                        <p>Founder&chairmen</p>
-                        
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <div class="w-full flex flex-col md:flex-row items-center justify-center px-8 py-16 gap-10">
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="../../Public/Images/online-shopping-system 1.png" alt="Shopping Online" class="w-[80%] h-auto">
     </div>
-    <include id="footer" src="../../components/footer/footer-component.html"></include>
-    <script type="module" src="../../utils/include.js" ></script>
+    <div class="w-full md:w-1/2 space-y-4">
+      <h2 class="text-3xl font-bold text-gray-800">Our Story</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Founded in 2015, GetValue is South Asia’s premier online shopping marketplace with a mission to provide a seamless, delightful, and easy-to-use digital retail experience. GetValue connects millions of customers with thousands of sellers across sectors.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Exclusive to KAZO sellers, and serving over 10 million customers across the region. GetValue has more than 1 billion products on offer, growing at a very fast pace.
+      </p>
+    </div>
+  </div>
+
+  <div class="w-full bg-white px-8 py-16">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-12">Our Team</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+
+      <div class="flex flex-col items-center space-y-3">
+        <img src="../../Public/Images/Frame 874.png" alt="Emin Sadiqli" class="w-40 h-40 object-cover shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Emin Sadiqli</h3>
+        <p class="text-gray-500">Founder & Chairman</p>
+        
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <img src="../../Public/Images/ai-generated-handsome-businessman-happy-and-smiling-young-man-in-smart-suit-posing-in-office-with-suit-ai-generated-free-photo 1.png" alt="Uğur Sadixli" class="w-40 h-40 object-cover shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Uğur Sadixli</h3>
+        <p class="text-gray-500">Managing Director</p>
+        
+          
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <img src="../../Public/Images/Frame 876.png" alt="Nicat Piriyev" class="w-40 h-40 object-cover shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Nicat Piriyev</h3>
+        <p class="text-gray-500">Product Designer</p>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+      <include id="footer" src="../../components/footer/footer-component.html"></include>
+
+      <script type="module" src="../../utils/include.js">
+      </script>
+
 </body>
+
 </html>
